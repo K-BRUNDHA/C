@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int sum=0;
+    int result=0;
+    printf("the value is=");
+    scanf("%d",&a);
+    while(a>0)
+    {
+        sum=a%10;
+        result=result+sum;
+        a=a/10;
+    }
+    printf("the resultent value %d",result);
+    
+    return 0;
+}
+
+
+\\another method using for loop\\
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    int sum=0;
+    int result=0;
+    printf("the value is=");
+    scanf("%d",&a);
+    for(b=a;b>0;b=b/10)
+    {
+        sum=b%10;
+        result=result+sum;
+    }
+    printf("the resultent value %d",result);
+    
+    return 0;
+}
